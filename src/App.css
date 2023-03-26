@@ -18,3 +18,8 @@
   object-fit: cover;
   border-radius: 15px
 }
+
+.desarrolloweb {
+  display: flex;
+  flex-direction: row;
+}
