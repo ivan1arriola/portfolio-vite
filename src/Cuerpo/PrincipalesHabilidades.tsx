@@ -1,47 +1,36 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Lista from "./Components/Lista";
 
 const PrincipalesHabilidades = () => {
+    const lenguajes = ["JavaScript", "C++", "Java", "R"];
+    const frontend = ["React", "Bootstrap", "HTML", "CSS"];
+    const backend = ["NodeJS", "Express", "MongoDB"];
+
     return (
         <Container>
-            <h1>Principales Habilidades</h1>
-            <div>
-                <div >
+            <h1>Principales habilidades</h1>
+            <Row>
+                <Col>
                     <h2>Desarrollo Web</h2>
-                    <div className='desarrolloweb'>
-                        <div >
-                            <h2>Frontend</h2>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2>Backend</h2>
-                            <ul>
-                                <li>NodeJS</li>
-                                <li>Express</li>
-                                <li>MySQL</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <h2>Desarrollo de Software</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>C++</li>
-                    <li>SQL</li>
-                </ul>
-
-            </div>
-        </Container>
+                    <Row>
+                        <Col>
+                            <h3>Frontend</h3>
+                            <Lista items={frontend} />
+                        </Col>
+                        <Col>
+                            <h3>Backend</h3>
+                            <Lista items={backend} />
+                        </Col>
+                    </Row>
+                </Col>
+                <Col>
+                    <h2>Lenguajes de programación</h2>
+                    <Lista items={lenguajes} />
+                </Col>
+            </Row >
+        </Container >
     );
-}
+};
 
 export default PrincipalesHabilidades;
