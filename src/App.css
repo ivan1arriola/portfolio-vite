@@ -1,25 +1,31 @@
-.principal {
-  height: 100vh;
-  max-width: 80vw;
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap');
+
+body{
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
 }
 
-.presentacion {
-  display: flex;
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
 }
 
-.presentacion > div {
-  margin: 0 1rem;
+h2{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
 }
 
-.presentacion img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px
+li{
+  list-style-type: none;
 }
 
-.desarrolloweb {
-  display: flex;
-  flex-direction: row;
+
+#selfie {
+  border-radius: 15px;
+  padding: 5px;
+  max-width: 300px;
 }
