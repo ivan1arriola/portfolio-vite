@@ -1,2 +1,0 @@
-# portfolio
-Pagina de presentacion
