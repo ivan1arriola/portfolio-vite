@@ -1,21 +1,41 @@
-
-body{
+h1, h2, h3, p, li, p {
+  font-size: 1.3rem;
   font-family: 'Alegreya', serif;
-  font-size: 2rem;
-  
   color: #000;
 }
+
+.cuerpo {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  border-color: #000;
+}
+.barra {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 10px 10px 10px;
+  border-color: #000;
+}	
 
 h1{
   font-size: 3rem;
   font-weight: 700;
-  color: #000;
+  text-align: center;
+  padding: 10px;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 h2{
   font-size: 2rem;
   font-weight: 500;
-  color: #000;
+  text-align: center;
 }
 
 li{
@@ -24,7 +44,11 @@ li{
 
 
 #selfie {
-  border-radius: 15px;
-  padding: 5px;
+  border-radius: 100%;
   max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 }
