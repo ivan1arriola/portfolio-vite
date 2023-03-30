@@ -6,8 +6,8 @@ const BarraDeNavegacion = () => {
     <>
       <Navbar bg="dark" variant="dark" className='barra'>
         <Container>
-          <Navbar.Brand href="#home">
-            Ivan1Arriola
+          <Navbar.Brand href="/">
+            Ivan Arriola - Portfolio
           </Navbar.Brand>
         </Container>
       </Navbar>

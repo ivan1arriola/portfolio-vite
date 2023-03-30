@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import selfie from "../assets/selfie.png";
+
+
 
 const Presentacion = () => {
-    const selfie = require('./imagenes/selfie.png');
+    
     return (
         <Container>
             <Row>

@@ -9,6 +9,7 @@ const Experiencias = () => {
         <h1>Experiencias</h1>
       </Row>
       <Row>
+        
         <Col>
           <CustomCard
             titulo="Floreria Camelia"
