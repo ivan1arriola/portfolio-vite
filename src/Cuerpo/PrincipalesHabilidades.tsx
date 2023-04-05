@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Lista from "./Components/Lista";
 
 const PrincipalesHabilidades = () => {
-    const lenguajes = ["JavaScript", "C++", "Java", "R"];
+    const lenguajes = ["JavaScript", "C++", "Java", "R", "Python"];
     const frontend = ["React", "Bootstrap", "HTML", "CSS"];
     const backend = ["NodeJS", "Express", "MongoDB"];
 
