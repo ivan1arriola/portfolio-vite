@@ -12,12 +12,12 @@ import PrincipalesHabilidades from './pages/PrincipalesHabilidades';
 
 function App() {
   return (
-    <>
+    <Container className="App">
       <Container className='header'>
         <Header />
       </Container>
 
-      <Container className="App">
+      <Container >
           <Presentacion />
           <hr />
           <PrincipalesHabilidades />
@@ -30,7 +30,7 @@ function App() {
       <Container className='footer'>
         <Footer />
       </Container>
-    </>
+    </Container>
   );
 }
 
