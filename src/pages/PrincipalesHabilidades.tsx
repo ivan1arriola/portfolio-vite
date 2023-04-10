@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ListaConImagenes from "./Components/ListaConImagenes";
+import ListaConImagenes from "../components/ListaConImagenes";
 
 const skills = [
   { nombre: "JavaScript", imagen: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },

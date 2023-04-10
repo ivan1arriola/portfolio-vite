@@ -1,32 +1,36 @@
-import './Estilos/App.css';
-import Header from './Cuerpo/Components/Header';
-import Cuerpo from './Cuerpo';
-import Footer from './Cuerpo/Components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Container } from 'react-bootstrap';
+import './styles/main.css';
 
-import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
-const themes = {
-  light: './Estilos/ModoClaro.css',
-  dark: './Estilos/ModoOscuro.css',
-};
+// Pages
+import Estudios from './pages/Estudios';
+import Experiencias from './pages/Experiencias';
+import Presentacion from './pages/Presentacion';
+import PrincipalesHabilidades from './pages/PrincipalesHabilidades';
 
-const storedTheme = localStorage.getItem('theme');
-const defaultTheme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
 function App() {
   return (
-    <ThemeSwitcherProvider defaultTheme={defaultTheme} themeMap={themes}>
-      <header>
+    <>
+      <Container className='header'>
         <Header />
-      </header>
+      </Container>
 
-      <main className="App">
-        <Cuerpo />
-      </main>
+      <Container className="App">
+          <Presentacion />
+          <hr />
+          <PrincipalesHabilidades />
+          <hr />
+          <Estudios />
+          <hr />
+          <Experiencias />
+      </Container>
 
-      <footer>
+      <Container className='footer'>
         <Footer />
-      </footer>
-    </ThemeSwitcherProvider>
+      </Container>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 import { Container, Row, Col} from 'react-bootstrap';
-import CostumeCardTwo from './Components/EducacionCard';
+import CostumeCardTwo from '../components/EducacionCard';
 
 const Estudios = () => {
     return (

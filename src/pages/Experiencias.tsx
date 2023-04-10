@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import CustomCard from './Components/ExperienciasCard';
+import CustomCard from '../components/ExperienciasCard';
 
 const Experiencias = () => {
   return (
