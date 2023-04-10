@@ -13,7 +13,7 @@
 
   
 
-.App {  
+#root {  
   font-family: 'Alegreya', serif;
   color: var(--text-color);
   margin: 0;
