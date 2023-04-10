@@ -1,15 +1,25 @@
 import React from 'react';
-import BarraDeNavegacion from './BarraDeNavegacion';
+import Header from './Cuerpo/Components/Header';
 import './App.css';
 import Cuerpo from './Cuerpo';
+import Footer from './Cuerpo/Components/Footer';
 
 
 function App() {
   return (
-    <div className="App">
-      <BarraDeNavegacion/>
-      <Cuerpo/>
-    </div>
+    <>
+      <header>
+        <Header />
+      </header>
+
+      <main className="App">
+        <Cuerpo />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 

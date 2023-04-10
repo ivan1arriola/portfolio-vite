@@ -5,7 +5,7 @@ import selfie from "../assets/selfie.png";
 
 
 const Presentacion = () => {
-    
+
     return (
         <Container>
             <Row>
@@ -13,10 +13,10 @@ const Presentacion = () => {
             </Row>
 
             <Row>
-                <Col>
-                    <img id='selfie' src={selfie} alt='selfie' className='img-fluid'/>
+                <Col lg={4}>
+                    <img id='selfie' src={selfie} alt='selfie' className='img-fluid' />
                 </Col>
-                <Col >
+                <Col>
                     <p>
                         Soy una persona apasionada por el desarrollo de software, me gusta aprender cosas nuevas y disfruto ponerme a prueba con nuevos retos.
                         Mi nombre es Ivan Arriola, soy uruguayo y tengo 23 años. Actualmente estoy cursando la carrera de Ingenieria en Computacion en la Universidad
@@ -25,6 +25,7 @@ const Presentacion = () => {
                     </p>
                 </Col>
             </Row>
+
         </Container>
     );
 }

@@ -10,13 +10,13 @@ import PrincipalesHabilidades from './Cuerpo/PrincipalesHabilidades';
 const Cuerpo = () => {
     return (
         <Container className='cuerpo'>
-            <Presentacion/>
+            <Presentacion />
             <hr />
-            <PrincipalesHabilidades/>
+            <PrincipalesHabilidades />
             <hr />
-            <Estudios/>
+            <Estudios />
             <hr />
-            <Experiencias/>
+            <Experiencias />
         </Container>
     );
 }
