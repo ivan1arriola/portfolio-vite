@@ -1,26 +1,23 @@
 /* Global styles */
 :root {
-  --primary-color: #000;
-  --secundary-color: #fff;
-  --background-color: #fff;
-  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  --navar-background-color: #fff;
+  --primary-color: #7E9CAE;
+  --secondary-color: #FFB347;
+  --background-color: #ffffff;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --navbar-background-color: #354F52;
+  --link-color: #FF5A5F;
+  --text-color: #333333;
+  --card-background-color: #F2F2F2;
+  --card-color: #000000;
+  --imagen-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 
 }
 
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: #fff;
-    --background-color: #000;
-    --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    --navar-background-color: #000;
-  }
-}
 
-body {
+
+body {  
   font-family: 'Alegreya', serif;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
   background-color: var(--background-color);
 }
@@ -32,13 +29,6 @@ header {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  background-color: var(--navar-background-color);
-  color: var(--primary-color);
-  border-color: var(--primary-color);
 }
 
 .navbar-brand {
@@ -48,10 +38,20 @@ header {
   color: var(--primary-color);
 }
 
+
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+  color: var(--primary-color);
 }
 
 /* Main styles */
@@ -60,16 +60,21 @@ main {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 500;
+  color: var(--primary-color);
 }
 
 p {
   font-size: 1.3rem;
   line-height: 1.5;
+  
 }
 
 ul {
@@ -93,19 +98,37 @@ img#selfie {
 .card {
   border: none;
   margin: 10px;
-  background-color: var(--background-color);
+  background-color: var(--card-background-color) !important;
 }
 
+.card .card-body {
+  padding: 0;
+  color: var(--card-color);
+  opacity: 0.8;
+}
 .imagen-lista {
   max-height: 100px;
+  margin: auto;
   max-width: 100px;
   object-fit: contain;
-}
+  background-color: var(--secundary-color);
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 5px;
+
+  
+    filter: var(--imagen-filter);
+  
+  }
+
+
+
 
 .card-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--background-color);
 }
 
 
