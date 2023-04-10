@@ -10,7 +10,7 @@ interface CardProps {
 const EducacionCard: React.FC<CardProps> = ({ titulo, periodo, institucion }) => {
   return (
     <Card className="h-100">
-      <Card.Body>
+      <Card.Body className='p-2'>
         <Card.Title>{titulo}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{periodo}</Card.Subtitle>
         <Card.Text>{institucion}</Card.Text>

@@ -11,8 +11,8 @@ interface CardProps {
 const ExperienciaCard: React.FC<CardProps> = ({ titulo, periodo, texto, link }) => {
   return (
     <Card className="h-100">
-      <Card.Body>
-        <Card.Title>{titulo}</Card.Title>
+      <Card.Body className='p-2'>
+        <Card.Title className='mt-3'>{titulo}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{periodo}</Card.Subtitle>
         <Card.Text>{texto}</Card.Text>
         <Card.Link href={link}>Visita la pagina</Card.Link>
