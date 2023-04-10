@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Container } from 'react-bootstrap';
 import './styles/main.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Pages
 import Estudios from './pages/Estudios';
