@@ -1,12 +1,12 @@
-import React from 'react';
+import './Estilos/App.css';
 import Header from './Cuerpo/Components/Header';
 import Cuerpo from './Cuerpo';
 import Footer from './Cuerpo/Components/Footer';
 
 import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
 const themes = {
-  light: 'src/Estilos/ModoClaro.css',
-  dark: 'src/Estilos/ModoOscuro.css',
+  light: './Estilos/ModoClaro.css',
+  dark: './Estilos/ModoOscuro.css',
 };
 
 const storedTheme = localStorage.getItem('theme');
