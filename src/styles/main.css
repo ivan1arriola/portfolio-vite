@@ -17,7 +17,7 @@ body {
   font-family: 'Alegreya', serif;
   color: var(--text-color);
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 /* Header styles */
