@@ -8,23 +8,18 @@ const Presentacion = () => {
 
     return (
         <Container>
-            <Row>
-                <h1>Presentacion</h1>
-            </Row>
+            <Container>
+                <h1>Holaa, mi nombre es Iván Arriola</h1>
+            </Container>
 
-            <Row>
-                <Col lg={4}>
-                    <img id='selfie' src={selfie} alt='selfie' className='img-fluid' />
-                </Col>
-                <Col>
-                    <p>
-                        Soy una persona apasionada por el desarrollo de software, me gusta aprender cosas nuevas y disfruto ponerme a prueba con nuevos retos.
-                        Mi nombre es Ivan Arriola, soy uruguayo y tengo 23 años. Actualmente estoy cursando la carrera de Ingenieria en Computacion en la Universidad
-                        de la Republica, en Montevideo, Uruguay. Me considero una persona responsable, proactiva y con ganas de aprender. Me gusta trabajar en equipo
-                        y me adapto facilmente a los cambios.
-                    </p>
-                </Col>
-            </Row>
+            <Container>
+                <p>
+                    Soy una persona aficionada a la tecnología y a la programación.
+                    Me considero una persona responsable, proactiva y autodidacta.
+                    De vez en cuando disfruto ponerme a prueba con nuevos retos.
+                    Tambien me gusta la música, la estadistica y la matemática.
+                </p>
+            </Container>
 
         </Container>
     );

@@ -4,9 +4,9 @@ import CostumeCardTwo from './Components/EducacionCard';
 const Estudios = () => {
     return (
         <Container>
-            <Row>
+            <Container>
                 <h1>Estudios</h1>
-            </Row>
+            </Container>
             <Row>
                 <Col>
                     <CostumeCardTwo

@@ -15,7 +15,7 @@ const ExperienciaCard: React.FC<CardProps> = ({ titulo, periodo, texto, link }) 
         <Card.Title>{titulo}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{periodo}</Card.Subtitle>
         <Card.Text>{texto}</Card.Text>
-        <Card.Link href={link}>Link</Card.Link>
+        <Card.Link href={link}>Visita la pagina</Card.Link>
       </Card.Body>
     </Card>
   );

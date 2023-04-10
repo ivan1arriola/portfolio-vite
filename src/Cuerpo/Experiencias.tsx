@@ -20,6 +20,15 @@ const Experiencias = () => {
         </Col>
 
         <Col>
+        <CustomCard
+            titulo='Floreria Camelia - Admin'
+            periodo='Actualidad'
+            texto='Desarrollo de la pagina dedicada a la administracion de la pagina de Floreria Camelia'
+            link='https://admin.floreriacamelia.com'
+          />
+        </Col>
+
+        <Col>
           <CustomCard
             titulo="Proyecto JAP"
             periodo="2022"

@@ -1,8 +1,10 @@
 /* Global styles */
 :root {
   --primary-color: #000;
+  --secundary-color: #fff;
   --background-color: #fff;
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  --navar-background-color: #fff;
 
 }
 
@@ -12,6 +14,7 @@
     --primary-color: #fff;
     --background-color: #000;
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    --navar-background-color: #000;
   }
 }
 
@@ -26,6 +29,23 @@ body {
 header {
   text-align: center;
   padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: var(--navar-background-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -116,6 +136,11 @@ footer {
 
   p {
     font-size: 1rem;
+  }
+
+  .imagen-lista {
+    max-height: 70px;
+    max-width: 70px;
   }
 }
 
