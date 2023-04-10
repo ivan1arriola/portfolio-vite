@@ -23,6 +23,8 @@ const ThemeSwitcher: React.FC = () => {
       root.style.setProperty("--card-background-color", "#212529");
       root.style.setProperty("--card-color", "#f5f5f5");
       root.style.setProperty("--imagen-filter", "drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))");
+      root.style.setProperty("--bs-body-bg", "#000000");
+      root.style.setProperty("--bs-body-color", "#f5f5f5");
 
 
     } else {
@@ -37,6 +39,8 @@ const ThemeSwitcher: React.FC = () => {
       root.style.setProperty("--card-background-color", "#F2F2F2");
       root.style.setProperty("--card-color", "#000000");
       root.style.setProperty("--imagen-filter", "drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))");
+      root.style.setProperty("--bs-body-bg", "#ffffff");
+      root.style.setProperty("--bs-body-color", "#333333");
 
     }
   }, [currentTheme]);
