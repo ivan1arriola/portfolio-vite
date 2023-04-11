@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 // Pages
 import Estudios from './pages/Estudios';
-import Experiencias from './pages/Experiencias';
+import Experiencias from './pages/Proyectos';
 import Presentacion from './pages/Presentacion';
 import PrincipalesHabilidades from './pages/PrincipalesHabilidades';
 import SobreMi from './pages/SobreMi';

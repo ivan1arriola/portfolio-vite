@@ -1,4 +1,27 @@
-import { Button } from "react-bootstrap";
+import { Button as BootstrapButton } from "react-bootstrap";
+import styled from "styled-components";
+
+const Button = styled(BootstrapButton)`
+  background-color: transparent;
+  border: none;
+  color: ${(props) => props.theme.colors.primary};
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 100px;
+  &:hover {
+    color: ${(props) => props.theme.colors.link};
+    background-color: transparent;
+  }
+  &:focus {
+    outline: none;
+    background-color: transparent;
+  }
+  &:active {
+    outline: none;
+    background-color: transparent;
+  }
+
+`;
 
 interface ThemeSwitcherProps {
   darkMode: boolean;
@@ -15,7 +38,6 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ darkMode, setDarkMode }) 
   return (
     <Button variant={darkMode ? "light" : "dark"} onClick={handleChange}>
       {darkMode ? <BiSun /> : <BiMoon />}
-      <span className="ms-2">{darkMode ? "Light Mode" : "Dark Mode"}</span>
     </Button>
   );
 };

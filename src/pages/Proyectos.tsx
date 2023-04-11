@@ -4,11 +4,11 @@ import CustomCard from '../styledcomponents/Card/ExperienciasCard';
 import Titulo from '../styledcomponents/Titulo';
 import ContainerPagina from '../styledcomponents/ContainerPagina';
 
-const Experiencias = () => {
+const Proyectos = () => {
   return (
-    <ContainerPagina>
+    <ContainerPagina id='proyects' >
       <Container>
-        <Titulo>Experiencias</Titulo>
+        <Titulo>Proyectos</Titulo>
       </Container>
       <Row>
         
@@ -43,4 +43,4 @@ const Experiencias = () => {
   );
 };
 
-export default Experiencias;
+export default Proyectos;

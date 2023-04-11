@@ -1,15 +1,16 @@
 const theme = {
     light: {
       colors: {
-        primary: "#50c9ce",
+        primary: "#19676a",
         secondary: "#f5c689",
         background: "#ffffff",
         text: "#2f2e2b",
-        link: "#e84c3d",
+        link: "dark",
         cardBackground: "#F2F2F2",
         cardText: "#000000",
         white: "#ffffff",
-        navbarBackground: "#cfe0d1"
+        navbarBackground: "#cfe0d1",
+        borderColor: "blue"
       },
       shadows: {
         box: "0 0 10px rgba(0, 0, 0, 0.1)"
@@ -28,11 +29,12 @@ const theme = {
         secondary: "#f5c689",
         background: "#000000",
         text: "#f5f5f5",
-        link: "#e84c3d",
+        link: "white",
         cardBackground: "#212529",
         cardText: "#f5f5f5",
         white: "#ffffff",
-        navbarBackground: "#311a73"
+        navbarBackground: "#311a73",
+        borderColor: "aquamarine"
       },
       shadows: {
         box: "0 0 10px rgba(255, 255, 255, 0.5)"

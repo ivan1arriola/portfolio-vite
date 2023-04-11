@@ -8,22 +8,25 @@ const ContainerPagina = styled.div`
     color: ${(props) => props.theme.colors.primary};
     transition: all 0.2s ease-in-out;
     text-align: center;
-    padding-bottom: 1rem;
+    padding: 10px;
     border-radius: 30px;
+    border-color: ${(props) => props.theme.colors.borderColor};
+    border-style: solid;
     margin: auto;
     margin-top: 30px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     overflow: hidden;
+    
     animation: 1.5s ${animation};
+
+    box-shadow: ${(props) => props.theme.shadows.box};
+    
+    /* media query para reducir el ancho en pantallas grandes */
     @media (min-width: 768px) {
-        width: 90%;
-    }
-    @media (min-width: 1024px) {
+        max-width: 800px;
         width: 80%;
     }
 `;
-
-console.log('ContainerPagina');
 
 
 

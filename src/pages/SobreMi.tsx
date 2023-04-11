@@ -1,8 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import selfie from "../assets/selfie.png";
-
-import Titulo from "../styledcomponents/Titulo";
 import Texto from "../styledcomponents/Texto";
 import Foto from "../styledcomponents/Foto";
 import ContainerPagina from "../styledcomponents/ContainerPagina";
@@ -20,12 +18,12 @@ const SobreMi: FC = () => {
   // ------
 
   return (
-    <ContainerPagina>
+    <ContainerPagina id="about">
       <FlexCentered>
-        <Div>
+        <div>
           <Foto src={selfie} alt="Selfie" />
-        </Div>
-        <Div>
+        </div>
+        <div>
           <Texto >
             Soy de Montevideo, Uruguay y tengo {edad} años.
             Estudio Ingeniería en Computación en la FING, UdelaR.
@@ -37,7 +35,7 @@ const SobreMi: FC = () => {
             De vez en cuando disfruto ponerme a prueba con nuevos retos.
             Tambien me gusta la música, la estadistica y la matemática.
           </Texto>
-        </Div>
+        </div>
       </FlexCentered>
     </ContainerPagina>
   );
@@ -54,8 +52,4 @@ const FlexCentered = styled.div`
     flex-direction: row;
   }
 `;
-
-const Div = styled.div`
-`;
-
 
