@@ -1,11 +1,14 @@
 import { Container, Row, Col} from 'react-bootstrap';
-import CostumeCardTwo from '../components/EducacionCard';
+import CostumeCardTwo from '../styledcomponents/Card/EducacionCard';
+import Titulo from '../styledcomponents/Titulo';
+import ContainerPagina from '../styledcomponents/ContainerPagina';
+
 
 const Estudios = () => {
     return (
-        <Container>
+        <ContainerPagina>
             <Container>
-                <h1>Estudios</h1>
+                <Titulo>Estudios</Titulo>
             </Container>
             <Row>
                 <Col>
@@ -24,7 +27,7 @@ const Estudios = () => {
                     />
                 </Col>
             </Row>
-        </Container>
+        </ContainerPagina>
     );
 }
 

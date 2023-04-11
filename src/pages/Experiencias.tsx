@@ -1,13 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import CustomCard from '../components/ExperienciasCard';
+import CustomCard from '../styledcomponents/Card/ExperienciasCard';
+import Titulo from '../styledcomponents/Titulo';
+import ContainerPagina from '../styledcomponents/ContainerPagina';
 
 const Experiencias = () => {
   return (
-    <Container>
-      <Row>
-        <h1>Experiencias</h1>
-      </Row>
+    <ContainerPagina>
+      <Container>
+        <Titulo>Experiencias</Titulo>
+      </Container>
       <Row>
         
         <Col>
@@ -37,7 +39,7 @@ const Experiencias = () => {
           />
         </Col>
       </Row>
-    </Container>
+    </ContainerPagina>
   );
 };
 

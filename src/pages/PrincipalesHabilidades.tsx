@@ -1,6 +1,8 @@
-import React from "react";
+import Subtitulo from "../styledcomponents/Subtitulo";
+import Titulo from "../styledcomponents/Titulo";
 import { Container, Row, Col } from "react-bootstrap";
 import ListaConImagenes from "../components/ListaConImagenes";
+import ContainerPagina from "../styledcomponents/ContainerPagina";
 
 const skills = [
   { nombre: "JavaScript", imagen: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },
@@ -24,31 +26,31 @@ const backendSkills = [
 ];
 
 const PrincipalesHabilidades = () => (
-  <Container>
+  <ContainerPagina>
     <Row className="justify-content-center">
-      <h1 className="text-center">Principales Habilidades</h1>
+      <Titulo className="text-center">Principales Habilidades</Titulo>
     </Row>
     <Row className="flex-wrap m-5 -5 justify-content-center">
-      <h2>Lenguajes</h2>
+      <Subtitulo>Lenguajes</Subtitulo>
       <Container className="d-flex flex-wrap justify-content-center">
         <ListaConImagenes lista={skills} />
       </Container>
     </Row>
     <Row className="mt-5 p-5">
       <Col lg={6}>
-        <h2 className="text-center">Frontend</h2>
+        <Subtitulo className="text-center">Frontend</Subtitulo>
         <Container className="d-flex flex-wrap justify-content-center">
           <ListaConImagenes lista={frontendSkills} />
         </Container>
       </Col>
       <Col lg={6}>
-        <h2 className="text-center">Backend</h2>
+        <Subtitulo className="text-center">Backend</Subtitulo>
         <Container className="d-flex flex-wrap justify-content-center">
           <ListaConImagenes lista={backendSkills} />
         </Container>
       </Col>
     </Row>
-  </Container>
+  </ContainerPagina>
 );
 
 
