@@ -2,20 +2,21 @@
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Container } from 'react-bootstrap';
-import {useState} from 'react';
+import { useState } from 'react';
 
 // Pages
 import Estudios from './pages/Estudios';
 import Experiencias from './pages/Experiencias';
 import Presentacion from './pages/Presentacion';
 import PrincipalesHabilidades from './pages/PrincipalesHabilidades';
+import SobreMi from './pages/SobreMi';
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { ThemeProvider } from "styled-components";
 import ContainerPrincipal from './styledcomponents/ContainerPrincipal';
 import theme from './styledcomponents/Theme';
+import Redes from './pages/Redes';
 
 
 function App() {
@@ -33,16 +34,21 @@ function App() {
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
 
-        <div>
+        <div className='body'>
           <Presentacion />
+          <hr />
+          <SobreMi />
           <hr />
           <PrincipalesHabilidades />
           <hr />
           <Estudios />
           <hr />
           <Experiencias />
-        </div>
           <hr />
+          <Redes />
+          <hr />
+        </div>
+
         <div className='footer'>
           <Footer />
         </div>

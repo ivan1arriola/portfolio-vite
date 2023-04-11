@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Navbar, Container } from "react-bootstrap";
 import  ThemeSwitcher  from "./ThemeSwitcher";
+import Logo from "../styledcomponents/Logo";
 
 interface HeaderProps {
   darkMode: boolean;
@@ -14,6 +15,17 @@ const HeaderContainer = styled(Navbar) `
   margin: 10px;
   border-radius: 100px;
   justify-content: space-between;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 105px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 `;
 
 const HeaderBrand = styled(Navbar.Brand)`
@@ -24,13 +36,12 @@ const HeaderBrand = styled(Navbar.Brand)`
 const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
   return (
     <HeaderContainer collapseOnSelect={true} expand="lg">
-      <Navbar.Toggle aria-controls="navbar-toggle" />
-      <Navbar.Collapse id="navbar-toggle">
         <Container fluid className="d-flex justify-content-between" >
-          <HeaderBrand href="/">Ivan Arriola - Portfolio</HeaderBrand>
+          <HeaderBrand href="/">
+            <Logo />
+          </HeaderBrand>
           <ThemeSwitcher darkMode={darkMode} setDarkMode={setDarkMode} />
         </Container>
-      </Navbar.Collapse>
     </HeaderContainer>
   );
 };

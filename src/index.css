@@ -1,6 +1,32 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap');
 
-  .body {
-    margin: 0;
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .body {
+      margin: 0 10%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .body {
+      margin: 0 5%;
+    }
+  }
+    
+@media screen and (max-width: 1024px) {
+    .body {
+      margin: 0 15%;
+    }
+  }
+
+
+
+
+  hr {
+    border: 1px solid #eaeaea;
+    margin: 5px 0;
   }

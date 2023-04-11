@@ -5,6 +5,7 @@ export const Card = styled(BootstrapCard)`
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.primary};
   transition: all 0.2s ease-in-out;
+  border : 0;
 `;
 
 export const CardTitle = styled(BootstrapCard.Title)`
@@ -31,9 +32,10 @@ export const CardBody = styled(BootstrapCard.Body)`
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.primary};
   transition: all 0.2s ease-in-out;
+  border : 0;
 `;
 
 export const CardImg = styled(BootstrapCard.Img)`
   object-fit: cover;
-  max-height: 10rem;
+  max-height: 7rem;
 `;

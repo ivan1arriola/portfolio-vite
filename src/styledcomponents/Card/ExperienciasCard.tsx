@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
-import { CardBody, CardLink, CardSubtitle, CardText, CardTitle } from './CardStyles';
+import {Card, CardBody, CardLink, CardSubtitle, CardText, CardTitle } from './CardStyles';
 
 interface CardProps {
   titulo: string;
