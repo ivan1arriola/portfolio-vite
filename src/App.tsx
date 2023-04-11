@@ -42,7 +42,7 @@ function App() {
           <hr />
           <Experiencias />
         </div>
-
+          <hr />
         <div className='footer'>
           <Footer />
         </div>
