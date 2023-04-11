@@ -1,5 +1,6 @@
-import logo from "/logo.svg";
-import styled from "styled-components";
+import React from 'react';
+import logo from '../assets/logo.svg';
+import styled from 'styled-components';
 
 const LogoImg = styled.img`
   height: 2rem;

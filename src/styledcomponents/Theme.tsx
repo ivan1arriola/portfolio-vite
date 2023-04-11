@@ -35,7 +35,7 @@ const theme = {
       offcanvas: { background: "#1F2937", text: "#F5F5F5", border: "#4B5563" }
     },
     shadows: {
-      box: "0 0 10px rgba(255, 255, 255, 0.5)"
+      box: "0 0 0px rgba(255, 255, 255, 0.5)"
     },
     filters: {
       image: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))",

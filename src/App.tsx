@@ -36,17 +36,11 @@ function App() {
 
         <div className='body'>
           <Presentacion />
-          <hr />
           <SobreMi />
-          <hr />
           <PrincipalesHabilidades />
-          <hr />
           <Estudios />
-          <hr />
           <Experiencias />
-          <hr />
           <Redes />
-          <hr />
         </div>
 
         <div className='footer'>
