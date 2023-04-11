@@ -1,6 +1,5 @@
 import { FC } from "react";
 import styled from "styled-components";
-import selfie from "../assets/selfie.png";
 import Texto from "../styledcomponents/Texto";
 import Foto from "../styledcomponents/Foto";
 import ContainerPagina from "../styledcomponents/ContainerPagina";
@@ -21,7 +20,7 @@ const SobreMi: FC = () => {
     <ContainerPagina id="about">
       <FlexCentered>
         <div>
-          <Foto src={selfie} alt="Selfie" />
+          <Foto src={"https://raw.githubusercontent.com/ivan1arriola/portfolio/main/src/assets/selfie.png"} alt="Selfie" />
         </div>
         <div>
           <Texto >
