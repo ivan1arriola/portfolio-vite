@@ -10,8 +10,6 @@ const ContainerPagina = styled.div`
     text-align: center;
     padding: 10px;
     border-radius: 30px;
-    border-color: ${(props) => props.theme.colors.borderColor};
-    border-style: solid;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -23,7 +21,7 @@ const ContainerPagina = styled.div`
     
     /* media query para reducir el ancho en pantallas grandes */
     @media (min-width: 768px) {
-        max-width: 800px;
+        max-width: 900px;
         width: 80%;
     }
 `;

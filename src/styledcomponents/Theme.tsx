@@ -1,54 +1,47 @@
 const theme = {
-    light: {
-      colors: {
-        primary: "#19676a",
-        secondary: "#f5c689",
-        background: "#ffffff",
-        text: "#2f2e2b",
-        link: "dark",
-        cardBackground: "#F2F2F2",
-        cardText: "#000000",
-        white: "#ffffff",
-        navbarBackground: "#cfe0d1",
-        borderColor: "blue"
-      },
-      shadows: {
-        box: "0 0 10px rgba(0, 0, 0, 0.1)"
-      },
-      filters: {
-        image: "drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))",
-        logo: "invert(1)"
-      },
-      fonts: {
-        primary: "'Alegreya', serif"
-      }
+  light: {
+    colors: {
+      primary: "#3B82F6",
+      secondary: "#60A5FA",
+      background: "#FFFFFF",
+      pageBackground: "#F0F4F8",
+      text: "#374151",
+      link: { color: "#3B82F6", hover: "#60A5FA" },
+      card: { background: "#FFFFFF", text: "#374151", border: "#D1D5DB" },
+      navbar: { background: "#FFFFFF", text: "#374151", border: "#D1D5DB" }
     },
-    dark: {
-      colors: {
-        primary: "#50c9ce",
-        secondary: "#f5c689",
-        background: "#000000",
-        text: "#f5f5f5",
-        link: "white",
-        cardBackground: "#212529",
-        cardText: "#f5f5f5",
-        white: "#ffffff",
-        navbarBackground: "#311a73",
-        borderColor: "aquamarine"
-      },
-      shadows: {
-        box: "0 0 10px rgba(255, 255, 255, 0.5)"
-      },
-      filters: {
-        image: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))",
-        logo: "invert(0)"
-      },
-      fonts: {
-        primary: "'Alegreya', serif"
-      }
+    shadows: {
+      box: "0 0 10px rgba(0, 0, 0, 0.1)"
+    },
+    filters: {
+      image: "drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))",
+      logo: "invert(1)"
+    },
+    fonts: {
+      primary: "'Open Sans', sans-serif"
     }
-  };
-  
-  export default theme;
-  
-  
+  },
+  dark: {
+    colors: {
+      primary: "#3B82F6",
+      secondary: "#60A5FA",
+      background: "#1F2937",
+      pageBackground: "#111827",
+      text: "#F5F5F5",
+      link: { color: "#3B82F6", hover: "#60A5FA" },
+      card: { background: "#374151", text: "#F5F5F5", border: "#4B5563" },
+      navbar: { background: "#1F2937", text: "#F5F5F5", border: "#4B5563" }
+    },
+    shadows: {
+      box: "0 0 10px rgba(255, 255, 255, 0.5)"
+    },
+    filters: {
+      image: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))",
+      logo: "invert(0)"
+    },
+    fonts: {
+      primary: "'Alegreya', sans-serif"
+    }
+  }
+};
+export default theme;

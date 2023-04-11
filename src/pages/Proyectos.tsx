@@ -6,7 +6,7 @@ import ContainerPagina from '../styledcomponents/ContainerPagina';
 
 const Proyectos = () => {
   return (
-    <ContainerPagina id='proyects' >
+    <ContainerPagina id='projects' >
       <Container>
         <Titulo>Proyectos</Titulo>
       </Container>

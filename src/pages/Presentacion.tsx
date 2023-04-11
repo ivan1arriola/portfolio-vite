@@ -10,7 +10,7 @@ const Presentacion = () => {
     return (
         <ContainerPagina>
             <Container>
-                <Titulo>Holaa, mi nombre es Iván Arriola</Titulo>
+                <Titulo>HOLAA, mi nombre es Iván Arriola</Titulo>
             </Container>
 
         </ContainerPagina>

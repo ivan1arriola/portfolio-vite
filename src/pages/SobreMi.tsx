@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styled from "styled-components";
 import selfie from "../assets/selfie.png";
 import Texto from "../styledcomponents/Texto";

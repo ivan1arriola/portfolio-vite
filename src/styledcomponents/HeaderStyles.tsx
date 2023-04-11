@@ -2,8 +2,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled(Navbar) `
-  background-color: ${(props) => props.theme.colors.navbarBackground};
-  color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.navbar.background};
+  color: ${(props) => props.theme.colors.navbar.text};
   padding: 20px;
   margin: 10px;
   border-radius: 100px;
@@ -23,18 +23,18 @@ export const HeaderContainer = styled(Navbar) `
 
 export const HeaderBrand = styled(Navbar.Brand)`
   font-size: 24px;
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.navbar.text};
 `;
 
 export const HeaderLink = styled(Navbar.Text)`
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    color: ${(props) => props.theme.colors.link};
+    color: ${(props) => props.theme.colors.navbar.text};
     margin: 0 10px;
     cursor: pointer;
     &:hover {
-        color: ${(props) => props.theme.colors.primary};
+        color: ${(props) => props.theme.colors.link.hover};
     }
 `;
 
