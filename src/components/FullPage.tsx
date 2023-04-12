@@ -1,3 +1,5 @@
+// route src/components/FullPage.tsx
+
 import ReactFullpage from '@fullpage/react-fullpage';
 
 //  Pages
@@ -10,14 +12,15 @@ import Redes from '../pages/Redes';
 import Contacto from '../pages/Contacto';
 
 const sections = [
-    { component: Presentacion },
-    { component: SobreMi },
-    { component: PrincipalesHabilidades },
-    { component: Experiencias },
-    { component: Estudios },
-    { component: Redes },
-    //{ component: Contacto },
-];
+    { component: Presentacion, id: "presentacion" },
+    { component: SobreMi, id: "sobremi" },
+    { component: PrincipalesHabilidades, id: "habilidades" },
+    { component: Experiencias, id: "experiencias" },
+    { component: Estudios, id: "estudios" },
+    { component: Redes, id: "redes" },
+    { component: Contacto, id: "contacto" },
+  ];
+  
 
 const FullPage = () => {
     return (
@@ -28,7 +31,6 @@ const FullPage = () => {
             navigation
             navigationPosition='left'
             navigationTooltips={['Presentación', 'Sobre mí', 'Principales habilidades', 'Experiencias', 'Estudios', 'Redes', 'Contacto']}
-            showActiveTooltip
             slidesNavigation
             slidesNavPosition='bottom'
             controlArrows={false}
@@ -36,6 +38,7 @@ const FullPage = () => {
             scrollOverflow={true}
             scrollOverflowReset={true}
             render={({ state, fullpageApi }) => {
+                console.log('render prop change', state);
                 return (
                     <ReactFullpage.Wrapper>
                         {sections.map((section, index) => {

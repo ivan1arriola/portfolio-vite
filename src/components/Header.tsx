@@ -1,9 +1,10 @@
+// route src\components\Header.tsx
+
 import { Container, Nav } from "react-bootstrap";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "../styledcomponents/Logo";
 import { HeaderContainer, HeaderBrand, HeaderLink } from "../styledcomponents/HeaderStyles";
 import { useState } from "react";
-import goToElement from "../utils/goToComponent";
 
 import { Offcanvas, OffcanvasHeader, OffcanvasTitle, OffcanvasBody } from "../styledcomponents/OffcanvasStyles";
 
@@ -12,15 +13,26 @@ interface HeaderProps {
   setDarkMode: (mode: boolean) => void;
 }
 
-const LinksHeader = () => {
-  return (<>
-    <HeaderLink onClick={() => goToElement("about")}>About</HeaderLink>
-    <HeaderLink onClick={() => goToElement("projects")}>Projects</HeaderLink>
-  </>
-  );
-};
+
 
 function Header({ darkMode, setDarkMode }: HeaderProps): JSX.Element {
+
+  const LinksHeader = () => {
+    return (
+      <>
+        
+      </>
+    );
+  };
+  
+  const goToElement = (element: string) => {
+    const elementToGo = document.getElementById(element);
+    if (elementToGo) {
+      elementToGo.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState({}, '', `/${element}`); // Agregar URL a la barra de direcciones
+    }
+  };
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
