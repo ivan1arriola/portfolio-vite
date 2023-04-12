@@ -12,7 +12,15 @@ interface HeaderProps {
   setDarkMode: (mode: boolean) => void;
 }
 
-const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
+const LinksHeader = () => {
+  return (<>
+    <HeaderLink onClick={() => goToElement("about")}>About</HeaderLink>
+    <HeaderLink onClick={() => goToElement("projects")}>Projects</HeaderLink>
+  </>
+  );
+};
+
+function Header({ darkMode, setDarkMode }: HeaderProps): JSX.Element {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,14 +39,12 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
           <OffcanvasBody>
             <ThemeSwitcher darkMode={darkMode} setDarkMode={setDarkMode} />
             <Nav className="flex-column">
-              <HeaderLink onClick={() => { goToElement("about"); handleClose(); }}>About</HeaderLink>
-              <HeaderLink onClick={() => { goToElement("projects"); handleClose(); }}>Projects</HeaderLink>
+              <LinksHeader />
             </Nav>
           </OffcanvasBody>
         </Offcanvas>
         <Nav className="ml-auto d-none d-md-flex">
-          <HeaderLink onClick={() => goToElement("about")}>About</HeaderLink>
-          <HeaderLink onClick={() => goToElement("projects")}>Projects</HeaderLink>
+          <LinksHeader />
           <ThemeSwitcher darkMode={darkMode} setDarkMode={setDarkMode} />
         </Nav>
         <Nav className="ml-auto d-flex d-md-none">
@@ -47,6 +53,6 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
       </Container>
     </HeaderContainer>
   );
-};
+}
 
 export default Header;

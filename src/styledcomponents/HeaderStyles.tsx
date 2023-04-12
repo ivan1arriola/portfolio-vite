@@ -19,7 +19,7 @@ export const HeaderContainer = styled(Navbar) `
   z-index: 1;
   border-radius: 105px;
   box-shadow: ${(props) => props.theme.shadows.box};
-  width: min(90%, 1000px);
+  width: max(90%, 15rem);
 `;
 
 export const HeaderBrand = styled.a`
