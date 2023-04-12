@@ -1,6 +1,7 @@
 import ContainerPagina from "../styledcomponents/ContainerPagina";
 import Titulo from "../styledcomponents/Titulo";
 import Texto from "../styledcomponents/Texto";
+import Redes from "../components/Redes";
 
 const Contacto: React.FC = () => {
     return (
@@ -11,8 +12,7 @@ const Contacto: React.FC = () => {
                 <Titulo className="display-4">Contacto</Titulo>
                 <Texto className="lead">
                 Si tienes alguna duda o quieres contactar conmigo, puedes hacerlo
-                a través de cualquiera de las redes sociales o del formulario de
-                contacto.
+                a través de cualquiera de las redes sociales.
                 </Texto>
                 <Texto className="lead">
                 También puedes enviarme un correo a{' '}
@@ -22,7 +22,18 @@ const Contacto: React.FC = () => {
                 </Texto>
             </div>
             <div className="col-12 col-md-6">
-                <form>
+               <Redes />
+            </div>
+            
+            </div>
+        </div>
+        </ContainerPagina>
+    );
+};
+
+export default Contacto;
+/*
+ <form>
                 <div className="form-group">
                     <label htmlFor="nombre">Nombre</label>
                     <input
@@ -54,11 +65,4 @@ const Contacto: React.FC = () => {
                     Enviar
                 </button>
                 </form>
-            </div>
-            </div>
-        </div>
-        </ContainerPagina>
-    );
-};
-
-export default Contacto;
+                */

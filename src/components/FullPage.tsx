@@ -8,7 +8,6 @@ import SobreMi from '../pages/SobreMi';
 import PrincipalesHabilidades from '../pages/PrincipalesHabilidades';
 import Experiencias from '../pages/Proyectos';
 import Estudios from '../pages/Estudios';
-import Redes from '../pages/Redes';
 import Contacto from '../pages/Contacto';
 
 const sections = [
@@ -17,7 +16,6 @@ const sections = [
     { component: PrincipalesHabilidades, id: "habilidades" },
     { component: Experiencias, id: "experiencias" },
     { component: Estudios, id: "estudios" },
-    { component: Redes, id: "redes" },
     { component: Contacto, id: "contacto" },
   ];
   
@@ -30,7 +28,7 @@ const FullPage = () => {
             licenseKey='gplv3-license'
             navigation
             navigationPosition='left'
-            navigationTooltips={['Presentación', 'Sobre mí', 'Principales habilidades', 'Experiencias', 'Estudios', 'Redes', 'Contacto']}
+            navigationTooltips={['Presentación', 'Sobre mí', 'Principales habilidades', 'Experiencias', 'Estudios', 'Contacto']}
             slidesNavigation
             slidesNavPosition='bottom'
             controlArrows={false}
@@ -43,7 +41,7 @@ const FullPage = () => {
                     <ReactFullpage.Wrapper>
                         {sections.map((section, index) => {
                             return (
-                                <div key={index} className='section'>
+                                <div key={index} className='section' id={section.id}>
                                     <section.component />
                                 </div>
                             );

@@ -1,7 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
 import Titulo from '../styledcomponents/Titulo';
-import ContainerPagina from '../styledcomponents/ContainerPagina';
 
 
 const SocialIconStyled = styled(SocialIcon)`
@@ -24,7 +23,7 @@ const Redes = () => {
 
 
     return (
-        <ContainerPagina>
+        <div>
 
             <Titulo>Mis Links</Titulo>
 
@@ -34,7 +33,7 @@ const Redes = () => {
                 <SocialIconStyled className='icono' url={linkedin} target='_blank' />
             </div>
 
-        </ContainerPagina>
+        </div>
     )
 
 }
