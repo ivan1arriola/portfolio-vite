@@ -1,5 +1,4 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import CustomCard from '../styledcomponents/Card/ProyectosCard';
 import Titulo from '../styledcomponents/Titulo';
 import ContainerPagina from '../styledcomponents/ContainerPagina';

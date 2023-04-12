@@ -6,7 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Presentacion from '../pages/Presentacion';
 import SobreMi from '../pages/SobreMi';
 import PrincipalesHabilidades from '../pages/PrincipalesHabilidades';
-import Experiencias from '../pages/Proyectos';
+import Proyectos from '../pages/Proyectos';
 import Estudios from '../pages/Estudios';
 import Contacto from '../pages/Contacto';
 
@@ -14,7 +14,7 @@ const sections = [
     { component: Presentacion, id: "presentacion" },
     { component: SobreMi, id: "sobremi" },
     { component: PrincipalesHabilidades, id: "habilidades" },
-    { component: Experiencias, id: "experiencias" },
+    { component: Proyectos, id: "proyectos" },
     { component: Estudios, id: "estudios" },
     { component: Contacto, id: "contacto" },
   ];
@@ -28,7 +28,7 @@ const FullPage = () => {
             licenseKey='gplv3-license'
             navigation
             navigationPosition='left'
-            navigationTooltips={['Presentación', 'Sobre mí', 'Principales habilidades', 'Experiencias', 'Estudios', 'Contacto']}
+            navigationTooltips={['Presentación', 'Sobre mí', 'Principales habilidades', 'Proyectos', 'Estudios', 'Contacto']}
             slidesNavigation
             slidesNavPosition='bottom'
             controlArrows={false}
