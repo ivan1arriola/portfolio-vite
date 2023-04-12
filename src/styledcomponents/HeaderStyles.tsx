@@ -12,30 +12,32 @@ export const HeaderContainer = styled(Navbar) `
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 20px;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   border-radius: 105px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  box-shadow: ${(props) => props.theme.shadows.box};
+  width: min(90%, 1000px);
 `;
 
-export const HeaderBrand = styled(Navbar.Brand)`
+export const HeaderBrand = styled.a`
   font-size: 24px;
   color: ${(props) => props.theme.colors.navbar.text};
 `;
 
-export const HeaderLink = styled(Navbar.Text)`
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: ${(props) => props.theme.colors.navbar.text};
-    margin: 0 10px;
-    cursor: pointer;
-    &:hover {
-        color: ${(props) => props.theme.colors.link.hover};
-    }
+export const HeaderLink = styled.a`
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.navbar.text};
+  margin: 0 10px;
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.colors.link.hover};
+  }
+  align-self : center;
 `;
 
 

@@ -27,31 +27,23 @@ const backendSkills = [
 
 const PrincipalesHabilidades = () => (
   <ContainerPagina>
-    <Row className="justify-content-center">
-      <Titulo className="text-center">Principales Habilidades</Titulo>
-    </Row>
-    <Row className="flex-wrap m-5 -5 justify-content-center">
-      <Subtitulo>Lenguajes</Subtitulo>
-      <Container className="d-flex flex-wrap justify-content-center">
-        <ListaConImagenes lista={skills} />
-      </Container>
-    </Row>
-    <Row className="mt-5 p-5">
-      <Col lg={6}>
-        <Subtitulo className="text-center">Frontend</Subtitulo>
-        <Container className="d-flex flex-wrap justify-content-center">
-          <ListaConImagenes lista={frontendSkills} />
-        </Container>
-      </Col>
-      <Col lg={6}>
-        <Subtitulo className="text-center">Backend</Subtitulo>
-        <Container className="d-flex flex-wrap justify-content-center">
-          <ListaConImagenes lista={backendSkills} />
-        </Container>
-      </Col>
-    </Row>
+    <Titulo className="text-center">Principales Habilidades</Titulo>
+
+    <Subtitulo>Lenguajes</Subtitulo>
+    <Container className="d-flex flex-wrap justify-content-center">
+      <ListaConImagenes lista={skills} />
+    </Container>
+
+    <Subtitulo className="text-center">Frontend</Subtitulo>
+    <Container className="d-flex flex-wrap justify-content-center">
+      <ListaConImagenes lista={frontendSkills} />
+    </Container>
+
+    <Subtitulo className="text-center">Backend</Subtitulo>
+    <Container className="d-flex flex-wrap justify-content-center">
+      <ListaConImagenes lista={backendSkills} />
+    </Container>
   </ContainerPagina>
 );
-
 
 export default PrincipalesHabilidades;

@@ -3,6 +3,10 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { useState } from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
+
+
+
 
 // Pages
 import Estudios from './pages/Estudios';
@@ -14,9 +18,10 @@ import SobreMi from './pages/SobreMi';
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { ThemeProvider } from "styled-components";
-import ContainerPrincipal from './styledcomponents/ContainerPrincipal';
+import ContainerApp from './styledcomponents/ContainerApp';
 import theme from './styledcomponents/Theme';
-import Redes from './pages/Redes';
+import Layout from './components/Layout';
+import FullPage from './components/FullPage';
 
 
 function App() {
@@ -29,24 +34,11 @@ function App() {
 
   return (
     <ThemeProvider theme={actualTheme}>
-      <ContainerPrincipal className="App">
-        <div className='header'>
-          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-        </div>
-
-        <div className='body'>
-          <Presentacion />
-          <SobreMi />
-          <PrincipalesHabilidades />
-          <Estudios />
-          <Experiencias />
-          <Redes />
-        </div>
-
-        <div className='footer'>
-          <Footer />
-        </div>
-      </ContainerPrincipal>
+      <ContainerApp>
+        <Layout darkMode={darkMode} setDarkMode={setDarkMode}>
+          <FullPage />
+        </Layout>
+      </ContainerApp>
     </ThemeProvider>
   );
 }

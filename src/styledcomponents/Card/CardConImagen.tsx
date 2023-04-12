@@ -8,7 +8,7 @@ interface Item {
 const CardConImagen = ({ imagen, nombre }: Item) => {
   return (
     <Card className=" m-2">
-      <CardImg variant="top" src={imagen} />
+      <CardImg  src={imagen} />
       <CardBody>
         <CardTitle>{nombre}</CardTitle>
       </CardBody>

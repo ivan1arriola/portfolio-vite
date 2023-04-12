@@ -36,8 +36,8 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ darkMode, setDarkMode }) 
   };
 
   return (
-    <Button variant={darkMode ? "light" : "dark"} onClick={handleChange}>
-      {darkMode ? <BiSun /> : <BiMoon />}
+    <Button  onClick={handleChange}>
+      {darkMode ? <BiMoon /> : <BiSun />}
     </Button>
   );
 };
