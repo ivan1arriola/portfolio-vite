@@ -24,15 +24,11 @@ const SobreMi: FC = () => {
         </div>
         <div>
           <Texto >
-            Soy de Montevideo, Uruguay y tengo {edad} años.
-            Estudio Ingeniería en Computación en la FING, UdelaR.
-            También soy egresado de Jóvenes a Programar (Ceibal) de su edición Desarrollo Web 2022
+            Soy un estudiante de Ingeniería en Computación y desarrollador web autodidacta de Montevideo, Uruguay, con {edad} años de edad.
+            Tengo conocimientos en HTML, CSS, JavaScript, y he desarrollado aplicaciones web de una sola página utilizando React. Además, tengo experiencia en programación orientada a objetos con C++ y he construido API REST con ExpressJS.
           </Texto>
           <Texto>
-            Soy una persona aficionada a la tecnología y a la programación.
-            Me considero una persona responsable, proactiva y autodidacta.
-            De vez en cuando disfruto ponerme a prueba con nuevos retos.
-            Tambien me gusta la música, la estadistica y la matemática.
+            Me considero una persona responsable, proactiva y apasionada por la tecnología y la programación. Disfruto desafiarme a mí mismo para mejorar mis habilidades y enfrentar nuevos retos. También me interesa la música, la estadística y las matemáticas.
           </Texto>
         </div>
       </FlexCentered>
@@ -51,4 +47,3 @@ const FlexCentered = styled.div`
     flex-direction: row;
   }
 `;
-
