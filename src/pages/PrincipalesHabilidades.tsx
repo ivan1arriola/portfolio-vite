@@ -11,7 +11,7 @@ import obtenerData from "../utils/obtenerData";
 const PrincipalesHabilidades = () => {
   const [skills, setSkills] = useState([]);
 
-  obtenerData("skills").then((data) => {
+  obtenerData("skills").then((data: any) => {
     setSkills(data.skills);
   });
 
