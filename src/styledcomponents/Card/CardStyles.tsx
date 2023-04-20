@@ -28,6 +28,7 @@ export const CardText = styled.p`
 export const CardLink = styled.a`
   font-size: 16px;
   text-decoration: none;
+  display: block;
   color: ${(props) => props.theme.colors.link.color};
   &:hover {
     color: ${(props) => props.theme.colors.link.hover};
