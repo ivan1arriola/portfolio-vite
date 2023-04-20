@@ -3,8 +3,19 @@ import styled from "styled-components";
 import Texto from "../styledcomponents/Texto";
 import Foto from "../styledcomponents/Foto";
 import ContainerPagina from "../styledcomponents/ContainerPagina";
+import obtenerData from "../utils/obtenerData";
+import { useState } from "react";
 
 const SobreMi: FC = () => {
+  const [descripcion, setDescripcion] = useState("");
+
+  obtenerData("about").then((data) => {
+    setDescripcion(data.about);
+  });
+
+
+
+
   /* Actualiza la edad automáticamente */
   const hoy: Date = new Date();
   const cumpleanos: Date = new Date(2000, 2, 1);
@@ -24,11 +35,7 @@ const SobreMi: FC = () => {
         </div>
         <div>
           <Texto >
-            Soy un estudiante de Ingeniería en Computación y desarrollador web autodidacta de Montevideo, Uruguay, con {edad} años de edad.
-            Tengo conocimientos en HTML, CSS, JavaScript, y he desarrollado aplicaciones web de una sola página utilizando React. Además, tengo experiencia en programación orientada a objetos con C++ y he construido API REST con ExpressJS.
-          </Texto>
-          <Texto>
-            Me considero una persona responsable, proactiva y apasionada por la tecnología y la programación. Disfruto desafiarme a mí mismo para mejorar mis habilidades y enfrentar nuevos retos. También me interesa la música, la estadística y las matemáticas.
+            {descripcion}
           </Texto>
         </div>
       </FlexCentered>
