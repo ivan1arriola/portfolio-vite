@@ -2,34 +2,38 @@ import { Container} from 'react-bootstrap';
 import CustomCard from '../styledcomponents/Card/ProyectosCard';
 import Titulo from '../styledcomponents/Titulo';
 import ContainerPagina from '../styledcomponents/ContainerPagina';
+import obtenerData from '../utils/obtenerData';
+import { useEffect, useState } from 'react';
 
 const Proyectos = () => {
+  const [proyectos, setProyectos] = useState([]);
+
+  useEffect(() => {
+    obtenerData('projects').then((data: any) => {
+      setProyectos(data.projects);
+    });
+  }, []);
+
+  console.log(proyectos);
+
   return (
     <ContainerPagina id='projects' >
       <Container>
         <Titulo>Proyectos</Titulo>
       </Container>
       <Container fluid className="d-flex flex-wrap justify-content-center">
-        <CustomCard
-          titulo="Floreria Camelia"
-          imagen="https://www.floreriacamelia.com/floreriaCamelia.svg"
-          periodo="Actualidad"
-          texto="Desarrollo de la pagina estatica de Floreria Camelia. Esta pagina esta hecha con React y Javascript"
-          link="https://www.floreriacamelia.com"
-        />
-        <CustomCard
-          titulo='Floreria Camelia - Admin'
-          periodo='Actualidad'
-          texto='Desarrollo de la API dedicada a modificar de forma dinamica las imagenes de la pagina de Floreria Camelia. La API esta hecha con Phyton y en su raiz tiene una pagina hecha con HTML y Bootstrap.'
-          link='https://admin.floreriacamelia.com'
-        />
-        <CustomCard
-          titulo="Proyecto JAP"
-          imagen="https://ivan1arriola.github.io/ProyectoJAP/img/login.png"
-          periodo="2022"
-          texto="Proyecto de Desarrollo Web del curso de Jovenes a Programar - CEIBAL. La pagina se hizo utilizando CSS, HTML y Javascript"
-          link="https://ivan1arriola.github.io/ProyectoJAP/"
-        />
+        {proyectos.map(({name, image, last_update, description, url, github, tech} )=> (
+          <CustomCard
+            key={name}
+            titulo={name}
+            imagen={image}
+            last_update={last_update}
+            texto={description}
+            link={url}
+            github={github}
+            tech={tech}
+          />
+        ))}
       </Container>
     </ContainerPagina>
   );
