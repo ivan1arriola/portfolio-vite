@@ -9,13 +9,13 @@ class Proyecto {
   name: string;
   description: string;
   image: string;
-  url: string;
+  url: string[];
   has_backend: boolean;
   github: string[];
   tech: string[];
   last_update: string;
 
-  constructor(name: string, description: string, image: string, url: string, has_backend: boolean, github: string[], tech: string[], last_update: string) {
+  constructor(name: string, description: string, image: string, url: string[], has_backend: boolean, github: string[], tech: string[], last_update: string) {
     this.name = name;
     this.description = description;
     this.image = image;
