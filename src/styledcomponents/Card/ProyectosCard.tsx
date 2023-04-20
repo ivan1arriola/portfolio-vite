@@ -5,13 +5,13 @@ import styled from 'styled-components';
 interface CardProps {
   proyecto: {
     name: string;
-    last_update: string;
     description: string;
-    url: string[];
-    image?: string;
-    github?: string[];
-    tech?: string[];
-    has_backend?: boolean;
+    image: string;
+    url: string;
+    has_backend: boolean;
+    github: string[];
+    tech: string[];
+    last_update: string;
   };
 }
 
@@ -33,7 +33,7 @@ const ProyectosCard: React.FC<CardProps> = ({ proyecto }) => {
         {description && <CardText>{description}</CardText>}
         <CardLink href={url[0]}>Visita la pagina</CardLink>
         {has_backend && <CardLink href={url[1]}>API</CardLink>}
-        {github && <CardLink href={github[0]}>Repositorio en Github { has_backend && "de FrontEnd" }   </CardLink>}
+        {github && <CardLink href={github[0]}>Repositorio en Github {has_backend && "de FrontEnd"}   </CardLink>}
         {has_backend && github && <CardLink href={github[1]}>Repositorio en Github de BackEnd</CardLink>}
         {tech && <CardText>Tecnologías utilizadas: {tech.join(', ')}</CardText>}
       </CardBody>
