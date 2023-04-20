@@ -32,9 +32,9 @@ const ProyectosCard: React.FC<CardProps> = ({ proyecto }) => {
         {last_update && <CardSubtitle className="mb-2 text-muted">Ultima Actualización: {last_update}</CardSubtitle>}
         {description && <CardText>{description}</CardText>}
         <CardLink href={url[0]}>Visita la pagina</CardLink>
-        {has_backend && <CardLink href={url[1]}>API</CardLink>}
-        {github && <CardLink href={github[0]}>Repositorio en Github { has_backend && "de FrontEnd" }   </CardLink>}
-        {has_backend && github && <CardLink href={github[1]}>Repositorio en Github de BackEnd</CardLink>}
+        {has_backend && <CardLink href={url[1]}>API Link</CardLink>}
+        {github && <CardLink href={github[0]}>Repositorio en Github   </CardLink>}
+        {has_backend && github && <CardLink href={github[1]}>Repositorio en Github de API</CardLink>}
         {tech && <CardText>Tecnologías utilizadas: {tech.join(', ')}</CardText>}
       </CardBody>
     </StyledCard>
